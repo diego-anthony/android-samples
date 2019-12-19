@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="9"
+    >
+    <TextView
+        android:id="@+id/txt_cod_person"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="01."
+        android:textSize="36dp"
+        android:textColor="#000000"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/txt_name_person"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:textColor="#000000"
+        android:textSize="36dp"
+        android:text="Nombre 01">
+
+    </TextView>
+</LinearLayout>
