@@ -1,6 +1,7 @@
 package com.example.android_samples;
 
 import android.os.Bundle;
+import android.os.Handler;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -25,6 +26,28 @@ public class MainActivity extends FragmentActivity {
         List<Fragment> fragments = getFragments();
         mFragmentPagerAdapter = new ItemFragmentPagerAdapter(getSupportFragmentManager(),fragments);
         mViewPager.setAdapter(mFragmentPagerAdapter);
+
+
+        runRotate();
+
+    }
+
+    private void runRotate()
+    {
+        final boolean toRight = true;
+
+        final Handler handler = new Handler();
+
+        final Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+
+                if (toRight)
+
+                handler.postDelayed(this,AppSettings.SPEED_ROTATE);
+            }
+        };
+        handler.postDelayed(runnable,AppSettings.SPEED_ROTATE);
     }
 
     private List<Fragment> getFragments(){
