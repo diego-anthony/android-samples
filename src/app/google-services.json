@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "47514185698",
+    "firebase_url": "https://androidrealtime-bb5d8.firebaseio.com",
+    "project_id": "androidrealtime-bb5d8",
+    "storage_bucket": "androidrealtime-bb5d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47514185698:android:3ad6033b5421c5992113bb",
+        "android_client_info": {
+          "package_name": "com.example.android_samples"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47514185698-h64k0o0paepkq9kk3ke6fet8kothgieb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8KPRcp4HUXXiRGorfh7_m-0Tn0Uzv4vU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47514185698-h64k0o0paepkq9kk3ke6fet8kothgieb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
