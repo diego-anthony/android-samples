@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">android-samples</string>
+    <string name="go_to_second_activity">Ir a segunda actividad</string>
+    <string name="second_activity_title">Segunda Actividad</string>
 </resources>
