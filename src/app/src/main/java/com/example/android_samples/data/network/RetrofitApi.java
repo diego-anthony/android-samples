@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 
 import com.example.android_samples.models.Country;
 import com.example.android_samples.services.ICountryService;
+import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
+import io.reactivex.Observable;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -28,11 +30,12 @@ public class RetrofitApi {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
         return retrofit;
     }
 
-    public Call<Country[]> getCountryByName(String name) {
+    public Observable<Country[]> getCountryByName(String name) {
         return mCountryService.getCountryByName(name);
     }
 }
